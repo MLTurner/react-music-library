@@ -16,7 +16,7 @@ function App() {
     const fetchData = async () => {
       document.title = `${search} Music`;
       const response = await fetch(
-        API_URL + term
+        API_URL + search
       );
       const resData = await response.json();
       if (resData.results.length > 0) {
